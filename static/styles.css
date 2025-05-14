@@ -1,0 +1,123 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* customs */
+body {
+  background-color: #1e1e1e;
+  justify-content: center; /* Center contents horizontally */
+  align-items: center; /* Center contents vertically */
+}
+
+form {
+  position: fixed;
+  bottom:40px;
+  left: 40px;
+  right: 40px;
+  display: flex;
+}
+
+textarea {
+  flex: 1; /* Take up remaining space */
+  height: 40px; /* Set initial height or adjust as needed */
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  resize: none; /* Disable resizing */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+button {
+  border: none;
+  background: none;
+  min-width: 20px; /* Set minimum width or adjust as needed */
+  height: 40px; /* Match height with textarea */
+  margin-left: 10px; /* Add spacing between textarea and button */
+  padding: 0 10px; /* Add padding inside button */
+  cursor: pointer;
+}
+
+.button-icon .material-symbols-rounded {
+  font-size: 30px; /* Adjust icon size */
+  margin-right: 5px; /* Optional: Add space between icon and text */
+  vertical-align: middle; /* Align icon vertically */
+  color: #e1e1e1;
+}
+
+
+ul {
+  position:fixed;
+  top: 100px;
+  bottom: 80px;
+  left: 80px;
+  right: 80px;
+  width: calc(100% - 160px); 
+  height: calc(100% - 240px);
+  overflow: auto;
+  padding: 10px; 
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none; /* Firefox */
+
+  /* Hide scrollbar for WebKit/Blink (Chrome, Safari, Opera) */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* WebKit/Blink */
+}
+
+/* Hide scrollbar for WebKit/Blink (Chrome, Safari, Opera) */
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-list {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+
+.custom-list li {
+  font-weight: bold;
+  color: #e1e1e1;
+  border: 1px solid #3b3b3d; /* Add border around each list item */
+  background-color: #3b3b3d;
+  padding: 10px; /* Add padding inside the border */
+  margin-bottom: 10px; /* Add margin between list items */
+  border-radius: 8px;
+  word-wrap: break-word; /* Wrap long words to fit within the container */
+  max-inline-size: 66.67%;
+}
+
+.custom-list li:nth-child(odd) {
+  width:fit-content;
+  text-align: right;
+  margin-left: auto;
+}
+
+.custom-list li:nth-child(even) {
+  width:fit-content;
+  text-align: left;
+}
+
+h2 {
+  position: fixed;
+  left: 80px;
+  text-align: left;
+  position: fixed;
+  font-weight: bold;
+  color: #e1e1e1;
+  padding: 10px;
+  margin: 40px 0px;
+}
+
+form {
+  font-weight: bold;
+  color: #e1e1e1;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+img {
+  padding: 10px;
+  border: 1px solid #3b3b3d; /* Add border around each list item */
+  background-color: #3b3b3d;
+  border-radius: 8px;
+}

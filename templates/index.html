@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <title>AI Assistant</title>
+</head>
+
+<body>
+  <h2>AI Assistant</h2>
+
+  <form method="post">
+    <textarea id="input" name="message" placeholder="Enter a message..." spellcheck="false" required></textarea>
+    <button class="button-icon" type="submit">
+      <span class="material-symbols-rounded">send</span>
+    </button>
+  </form>
+
+  {% if items %}
+  <ul class="custom-list">
+    {% for item in items %}
+      <li>{{ item }}</li>
+    {% endfor %}
+
+    {% if image %}
+    <img src="{{ image }}" alt="Image" style="max-width: 500px; max-height: 500px;">
+    {% endif %}
+  </ul>
+  {% endif %}
+
+</body>
+</html>
