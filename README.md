@@ -1,4 +1,4 @@
-## AI Assistant | HTML, CSS
+## AI Assistant
 
 - Full-stack web application hosting GPT-4's conversational and image analysis features via Azure OpenAI Service
 
