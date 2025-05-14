@@ -1,4 +1,4 @@
-# AI Assistant | HTML, CSS
+## AI Assistant | HTML, CSS
 
 - Full-stack web application hosting GPT-4's conversational and image analysis features via Azure OpenAI Service
 
@@ -6,7 +6,9 @@
 
 - Developed a minimalistic UI with HTML and CSS, ensuring a clean, user-friendly design
 
-Note: Sensitive credentials have been omitted from this repository for security reasons. To run this project locally, create a credentials.json file in the root directory with the following format:
+### Note 
+
+Sensitive credentials have been omitted from this repository for security reasons. To run this project locally, create a credentials.json file in the root directory with the following format:
 
 ```bash
 {
